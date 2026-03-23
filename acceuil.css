@@ -67,6 +67,12 @@ main h2 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
+.card-img {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
 .card {
   background: #fff;
   border: 1px solid #90a4ae;
