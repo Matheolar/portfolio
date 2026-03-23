@@ -80,7 +80,7 @@ main h2 {
   padding: 1rem;
 }
 img{
-width: minmax(200px, 1fr);
+width: 200px;
 }
 
 .photo {
