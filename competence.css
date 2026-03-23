@@ -73,6 +73,7 @@ nav a:hover {
   border: 1px solid #90a4ae;
   border-radius: 10px;
   background: #fff;
+  margin: 50px;
 }
 .gray-box { background: #cfd8dc; }
 .red-box {
