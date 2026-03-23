@@ -60,7 +60,18 @@ nav a:hover {
   margin-bottom: 1.5rem;
   font-style: italic;
 }
-
+.telecharger {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: #90caf9;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 .card-wrapper {
   display: grid;
