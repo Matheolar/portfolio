@@ -68,6 +68,13 @@ nav a:hover {
   gap: 1rem;
   margin: 50px;
 }
+.card-comp5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 50px;
+}
+
 .card {
   padding: 1rem;
   border: 1px solid #90a4ae;
