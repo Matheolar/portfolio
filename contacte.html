@@ -7,55 +7,65 @@
   <link rel="stylesheet" href="css/contacte.css">
 </head>
 <body>
+
   <header>
     <div class="logo">
       <h1>Mathéo<br>Larivière</h1>
     </div>
     <nav>
       <ul>
-        <li><a href="index.html" >accueil</a></li>
-        <li><a href="competence.html">compétences</a></li>
-
-        <li><a href="contacte.html" class="active">contacter</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="competence.html">Compétences</a></li>
+        <li><a href="contacte.html" class="active">Contacter</a></li>
       </ul>
     </nav>
   </header>
-  </header>
+
   <section id="contacter" class="section">
-      <h2>contact</h2>
-      <div class="contact">
-        <ul>
-          <li>
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=matheo.lariviere2111@gmail.com"
-              target="_blank"
-              class="email-link"
-            >matheo.lariviere2111@gmail.com</a>
-            
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/math%C3%A9o-lariviere-299b70338/" >linkedin</a>
-            
-          </li>
-          <li>06 36 20 36 09</li>
-          <li>nom : Larivière</li>
-          <li>prénom : Mathéo</li>
-          <li>âge : <span id="age"></span> ans</li>
-          <li>ville : Noisy-le-Grand</li>
-        </ul>
-      </div>
-  
+    <h2>Contact</h2>
+
+    <div class="contact">
+      <ul>
+        <li>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=matheo.lariviere2111@gmail.com"
+            target="_blank"
+            class="email-link"
+          >
+            matheo.lariviere2111@gmail.com
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/math%C3%A9o-lariviere-299b70338/" target="_blank">
+            LinkedIn
+          </a>
+        </li>
+
+        <li>06 36 20 36 09</li>
+        <li>Nom : Larivière</li>
+        <li>Prénom : Mathéo</li>
+        <li>Âge : <span id="age"></span> ans</li>
+        <li>Ville : Noisy-le-Grand</li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    const aniv = new Date("2006-11-21");
+    const aujourdHui = new Date();
+
+    let age = aujourdHui.getFullYear() - aniv.getFullYear();
 
 
-    </section>
+    if (
+      aujourdHui.getMonth() < aniv.getMonth() || (aujourdHui.getMonth() === aniv.getMonth() && aujourdHui.getDay() < aniv.getDay())
+    ) {
+      age -= 1;
+    }
 
-<script>
-  const aniv = new Date("2006-11-21");
-  const aujourdHui = new Date();
+    document.getElementById("age").textContent = age;
+  </script>
 
-  let age = aujourdHui.getFullYear() - aniv.getFullYear();
-  if (aujourdHui.getMonth()<aniv.getMonth() || (aujourdHui.getMonth()==aniv.getMonth() && aujourdHui.getDay()<aniv.getDay())){
-      age -= 1;  
-  }
-  document.getElementById("age").textContent = age;
-</script>
+</body>
+</html>
