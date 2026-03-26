@@ -222,3 +222,14 @@ body.no-scroll {
   background-color: black;
   border: none;
 }
+
+.colonne {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* espace entre les images */
+}
+
+.colonne img {
+  max-width: 200px; /* ajuste la taille si besoin */
+  height: auto;
+}
