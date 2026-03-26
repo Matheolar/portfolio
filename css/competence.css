@@ -192,3 +192,26 @@ nav a:hover {
 body.no-scroll {
   overflow: hidden;
 }
+.liste{
+  margin-left: 5%;
+}
+.ligne {
+  margin-top: 2%;
+  display: flex;
+  
+  gap: 15px;
+}
+
+.ligne img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.sepa {
+  width: 80%;
+  margin: 20px auto;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
