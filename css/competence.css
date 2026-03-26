@@ -215,3 +215,10 @@ body.no-scroll {
 .reverse {
   flex-direction: row-reverse;
 }
+
+.sepav {
+  width: 2px;        
+  height: 100px;     
+  background-color: black;
+  border: none;
+}
