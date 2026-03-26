@@ -84,9 +84,17 @@ width: 200px;
 }
 
 .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #cfd8dc;
 }
 
+.photo img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
 .recherche {
   border-color: #e57373;
 }
