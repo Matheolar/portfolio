@@ -31,12 +31,31 @@
               target="_blank"
               class="email-link"
             >matheo.lariviere2111@gmail.com</a>
+            
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/math%C3%A9o-lariviere-299b70338/" >linkedin</a>
+            
           </li>
           <li>06 36 20 36 09</li>
           <li>nom : Larivière</li>
           <li>prénom : Mathéo</li>
-          <li>âge : 18 ans</li>
+          <li>âge : <span id="age"></span> ans</li>
           <li>ville : Noisy-le-Grand</li>
         </ul>
       </div>
+  
+
+
     </section>
+
+<script>
+  const aniv = new Date("2006-11-21");
+  const aujourdHui = new Date();
+
+  let age = aujourdHui.getFullYear() - aniv.getFullYear();
+  if (aujourdHui.getMonth()<aniv.getMonth() || (aujourdHui.getMonth()==aniv.getMonth() && aujourdHui.getDay()<aniv.getDay())){
+      age -= 1;  
+  }
+  document.getElementById("age").textContent = age;
+</script>
